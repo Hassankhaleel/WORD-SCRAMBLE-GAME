@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <button class="startBtn startBtnHidden" id="startBtnn"
+        style="background-color: black; width:300px;height: 150px; font-size: 40px; color: white; cursor: pointer;">Let's
+        Start</button>
+    <!-- POPUP BOX START-->
+    <span class="popup-div popup-div-hidden" id="popupDiv">
+        <!-- <div class="popup-div " data-aos="zoom-in">
+            <div class="popup-box ">
+                <i class="oop">Oop!</i>
+                <h1>You Could'nt Guess Word In Given Time.</h1>
+                <button class="pop-btn">Next Task<i class="fa-solid fa-arrow-right arrow"></i></button>
+            </div>
+        </div> -->
+    </span>
+    <!-- POPUP BOX END -->
+    <span id="alertBox" class="alertBox">
+        <!-- <div class="alerdiv" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="100">
+            <div class="alerContent">
+                <span> <i class="fa-solid fa-triangle-exclamation"></i>Kindly Enter Word.</span>
+            </div>
+        </div> -->
+    </span>
+    <span class="thumb_span_div" id="thumSpan">
+        <!-- <div class="thumb_div">
+            <span> <i class="fa-regular fa-thumbs-up"></i></span>
+        </div> -->
+        <!-- <div class="thumb_div">
+            <h1>HHHHH</h1>
+
+        </div> -->
+    </span>
+    <div class="main-div hidden" id="mainDiv">
+
+        <div class="game-div ">
+            <h1>Word Scramble</h1>
+            <hr>
+            <h3 class="msg hidden" id="mssg">PETYRISPCT</h3>
+            <h4 id="h4"></h4>
+
+            <H6 class="hint_msg"><span style="font-weight: bolder;">Hint:</span> <span id="hintMsg">Its the supper set
+                    of language.</span></H6>
+            <p><i class="fa-solid fa-clock-rotate-left "></i> left <span id="timer" style="font-weight: bolder;">
+                </span> sec.</p>
+            <div class="anser-input-div">
+                <input type="text" class="ANSER-INPUT" id="anseInput" required>
+                <p class="" id="placholder">Enter a Valid Word</p>
+            </div>
+            <DIV class="Btn-div">
+                <BUTton class="CHECK-ANWER" id="checkBtn">Check</BUTton>
+                <!-- <BUTton class="CHECK-ANWER" on id="IFsTATE">USE IF STAT</BUTton> -->
+            </DIV>
+        </div>
+    </div>
+    <script src="word.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

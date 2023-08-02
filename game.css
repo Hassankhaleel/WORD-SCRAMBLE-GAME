@@ -1,0 +1,399 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Manrope&family=Quicksand:wght@700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+
+ /* 33848015 
+ 
+ 
+ 
+ 
+ 
+ */
+
+ * {
+     margin: 0%;
+     padding: 0%;
+     box-sizing: border-box;
+ }
+
+ .startBtn {
+     display: none;
+ }
+
+ .startBtnHidden {
+     background-color: #000000 !important;
+     display: block;
+ }
+
+ body {
+     justify-content: center;
+     display: flex;
+     align-items: center;
+     background-color: #5372EF;
+     height: 100vh;
+     width: 100vw;
+ }
+
+ .main-div {
+     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+     border-radius: 10px;
+     height: 50vh;
+     width: 30vw;
+     background-color: #FFFFFF;
+
+ }
+
+ .game-div h1 {
+     margin: 10px;
+     text-align: center;
+     font-family: 'Mukta', sans-serif;
+     /* font-weight: 900; */
+     /* font-family: 'Nunito', sans-serif; */
+     letter-spacing: 2px;
+     font-size: x-large;
+ }
+
+ .msg {
+     text-align: center;
+     /* font-family: 'Manrope', sans-serif; */
+     font-size: xx-large;
+     margin-top: 40px;
+     letter-spacing: 20px;
+     font-family: 'Cabin', sans-serif;
+     font-weight: bold;
+
+ }
+
+ h6 {
+     font-size: large;
+     /* background-col  : #5372EF; */
+     text-align: start;
+     font-weight: lighter;
+     font-family: 'Mukta', sans-serif;
+     margin-left: 20px;
+     margin-top: 20px;
+ }
+
+ p {
+     font-family: 'Mukta', sans-serif;
+     margin-left: 20px;
+ }
+
+ .anser-input-div {
+
+     margin-top: 30px;
+     display: flex;
+     justify-content: center;
+     align-items: end;
+ }
+
+ .anser-input-div input {
+     padding-left: 15px;
+     width: 80%;
+     font-family: 'Mukta', sans-serif;
+     height: 45px;
+ }
+
+ .anser-input-div p {
+     /* background-color: #5372EF; */
+     text-align: left;
+     position: absolute;
+     display: flex;
+     left: 38%;
+     top: 59.5%;
+     opacity: .7;
+ }
+
+ .ANSER-INPUT:focus {
+     outline: none;
+     border-width: 0px;
+     border: 2px solid #5372EF !important;
+ }
+
+ .ANSER-INPUT:focus~p {
+     border-left: 1px solid #5372EF;
+     border-right: 1px solid #5372EF;
+
+     transition: .5s;
+     font-size: small;
+     opacity: 1;
+     background-color: #FFFFFF;
+     line-height: 18px;
+     padding-left: 8px;
+     padding-right: 8px;
+     /* background-color: #5372EF; */
+     transform: translateY(-19px);
+ }
+
+ .CHECK-ANWER {
+     cursor: pointer;
+     font-size: 10px;
+     letter-spacing: 2px;
+     margin-top: 15PX;
+     width: 110PX;
+     height: 35px;
+     border-radius: 5px;
+     outline: none;
+     background-color: #5372EF;
+     border: none;
+     color: #FFFFFF;
+ }
+
+ .Btn-div {
+     justify-content: center;
+     display: flex;
+ }
+
+ .hidden {
+     display: none !important;
+ }
+
+ /*======================================================================================================== */
+ /* ------------------ALERT BOX START------------------------- */
+
+
+ .alerContent {
+     margin: -120px 160px;
+     position: absolute;
+     display: flex;
+     justify-content: start;
+     font-size: xx-large;
+     outline: #000000;
+     /* padding: 20px; */
+     height: 30px;
+     width: 145px;
+     opacity: .7;
+     /* margin-l    e: 20px; */
+     background-color: #ffb700;
+     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+     animation: myAnim 2s ease 0s 1 normal forwards;
+ }
+
+ @keyframes myAnim {
+
+     0%,
+     50%,
+     100% {
+         opacity: 1;
+     }
+
+     25%,
+     75% {
+         opacity: 0;
+     }
+ }
+
+ .alerContent span {
+     color: rgb(0, 0, 0);
+     font-family: 'Mukta', sans-serif;
+     font-size: 13px;
+     font-weight: bolder;
+ }
+
+ .alerContent i {
+     background-color: #ff0000;
+     margin-right: 10px;
+     text-align: center;
+     width: auto;
+     /* margin: 7px; */
+     padding: 8px;
+     color: white !important;
+ }
+
+ .alerdiv i {
+     /* padding: 30px; */
+     /* background-color: ; */
+ }
+
+
+ /* ------------------ALERT BOX END------------------------- */
+ /*======================================================================================================== */
+ /* ------------------THUMB BOX START------------------------- */
+
+
+ .thumb_div {
+     font-size: 200px;
+     /* color: rgb(27, 0, 94); */
+     color: rgb(255, 208, 0);
+     position: absolute;
+     margin: -10% 8%;
+     animation: thumb 3s ease 0s 1 alternate forwards;
+     /* Customize the animation duration and timing function as needed */
+ }
+
+
+ @keyframes thumb {
+     0% {
+         opacity: 0.8;
+         transform: scale(0.2);
+     }
+
+     80% {
+         opacity: 0;
+         transform: scale(2.8);
+     }
+
+     100% {
+         opacity: 0;
+         transform: scale(7);
+     }
+ }
+
+ /* ------------------THUMB BOX END------------------------- */
+
+
+ /* popup boc\x */
+
+ .popup-div {
+     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 50px 24px 80px;
+     width: 20vw;
+     height: 20vw;
+     background-color: #ffffff;
+     position: absolute;
+     display: block;
+     justify-content: center;
+     z-index: 1;
+ }
+
+
+ .popup-div-hidden {
+     display: none !important;
+
+ }
+
+ .popup-box {
+     display: block;
+ }
+
+ .popup-div>.popup-box>.oop {
+     margin-top: 30px;
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     font-size: 60px;
+     font-style: normal;
+     color: #e70404;
+ }
+
+ .popup-div>.popup-box>.pop-btn>.arrow {
+
+     animation: arrow 1s linear infinite alternate;
+     margin-left: 10px;
+ }
+
+ @keyframes arrow {
+     from {
+         transform: translateX(2px);
+     }
+
+     to {
+         transform: translateX(-2px);
+     }
+ }
+
+
+ .popup-div>.popup-box>.pop-btn {
+     cursor: pointer;
+     font-size: 12px;
+     letter-spacing: 2px;
+     /* margin-top: 15PX !important; */
+     width: 120PX;
+     height: 45px;
+     outline: none;
+     background-color: #264ff2;
+     border: none;
+     color: #FFFFFF;
+     margin: 5% auto !important;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .popup-div>.popup-box>h1 {
+     margin-top: 20px;
+     text-align: center;
+     font-size: x-large;
+     font-family: 'Mukta', sans-serif;
+ }
+
+ /* popup boc end \x */
+
+
+
+
+
+ /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+ /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+ @media (max-width:426px) {
+     .main-div {
+
+         height: 55vh;
+         width: 80vw;
+     }
+
+     .popup-div {
+         width: 70vw;
+         height: 70vw;
+
+     }
+
+     .alerContent {
+         margin: -120px 100px;
+
+         height: 30px;
+         width: 145px;
+         opacity: .7;
+
+     }
+
+     .anser-input-div p {
+         /* background-color: #5372EF; */
+
+         left: 18%;
+         top: 59.5%;
+     }
+
+     .msg {
+         margin-top: 40px;
+         letter-spacing: 15px;
+
+
+     }
+
+     h6 {
+         font-size: small;
+
+     }
+
+     .thumb_div {
+         font-size: 180px;
+         /* color: rgb(27, 0, 94); */
+         color: rgb(0, 0, 0);
+         position: absolute;
+         margin: -35% 16%;
+         animation: thumb 3s ease 0s 1 alternate forwards;
+         /* Customize the animation duration and timing function as needed */
+     }
+
+     @keyframes thumb {
+         0% {
+             opacity: 0.8;
+             transform: scale(0.2);
+         }
+
+         80% {
+             opacity: 0;
+             transform: scale(2.8);
+         }
+
+         100% {
+             opacity: 0;
+             transform: scale(7);
+         }
+     }
+
+ }
